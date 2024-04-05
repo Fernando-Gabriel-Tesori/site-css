@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #505070;
+}
+ .wrap{
+  height: 100vh;
+  width: 100vw;
+}
+.mascara {
+    height:100%;
+    width:100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.79) 15%, rgba(10, 12,
+    16, 0.57) 50%, rgba(10, 12, 16, 0.49) 85%);
+    position: fixed;
+    top: 0;}
+.container-left {
+  display: inline-block;
+  width: 60%;
+}
+.container-right {
+  display: inline-block;
+  background-color: rgba(93, 93, 125, 
+  0.16);
+  height: 100vh;
+  width: 40%;
+  position: absolute;
+}
+img {
+  position: relative;
+  top: 25%;
+  right: 130px;
+}
+h1{
+  font-size: 50px;
+  padding: 40px;
+}
+p{
+  font-size: 28px;
+  padding:40px;
+}
+button{
+  width: 283px;
+  height: 100px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background: #c51111;
+}
+button:houver {
+  opacity: .8;
+}
+button:active{
+  opacity:.6;
+}
+.one{
+  font-size:30px;
+  margin-right: 41px;
+  line-height: 41px;
+}
+.one:nth-child (2) {  
+ opacity: 0.4; 
+}
+.one:houver {
+  opacity: 0.4;
+}
+.one:active {
+  opacity: 0.8;
+}
+header{
+  margin:28px 0 0 57px; 
+}
+
+@media screen and (max-width:900px){
+  .container-left{
+    width:100%;
+    height:50%;
+    padding:0;
+    margin: 50;
+  }
+  .container-right {
+    display: block;
+    height:auto;
+    width: 100%;
+    position: static;
+    padding: 40px;
+  }
+  img{
+    position: static;
+  }
+  header{
+    display: none;
+  }
+  h1{
+    font-size: 36px;
+    line-height:52px;
+    width: auto;
+    margin: 50px 50px 0 50px;
+    text-align: center;
+  }
+  p{
+    margin: 15px 40px;
+    width: auto;
+    text-align: center;
+    line-height: 30px;
+  }
+  button{
+    margin: 0 auto;
+    display:block;
+  }
+}
